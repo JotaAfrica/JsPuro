@@ -2,16 +2,61 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-        <title>Document</title>
+        <title>Formulário de Dados</title>
         <script src="js/script.js"></script>
     </head>
     <body>
         
         <p id="info">[Resultados]</p>
         <button onclick="teste()">clicar</button>
+        <br/>
+        <br/>
 
+            <!-- Jonato em 09Abr2022 quero saber o efeito dos atributos do enctype -->
+            <form 
+                id = "formul1"
+                accept-charset="utf-8"
+                action = "formul.html"
+                autocomplete = "on"
+                enctype ="applicaton/x-www-form-urlencoded"
+                method ="get" 
+                target = "_blank"
+                name="formul.1"
+                rel = "next" >    
+                <label>FORMULARIO HUM</label>
+                <label for="fname">First name:</label>
+                <input type="text" >
+                <br/>
+                <input type="submit" value="formulario 1">
+                <br/>
+            </form>
+            <br/>
+            <label>Last name:</label>
+            <input type="text" form="formul1">
+            <br/>
+            <br/>
 
+            <form 
+                id = "formul2"
+                accept-charset="utf-8"
+                action = "formul.html"
+                autocomplete = "on"
+                enctype ="applicaton/x-www-form-urlencoded"
+                method ="get" 
+                target = "_blank"
+                name="formul.1"
+                rel = "next" >    
+                <label>FORMULARIO DOIS</label>
+                <label>Primeiro nome:</label>
+                <input type="text">
+                <br/>
+                <input type="submit" value="formulario 2">
+                <br/>
+            </form>
+            <br/>
+            <label>Ultimo nome:</label>
+            <input type="text"  form="formul2">
+            <br/> 
 
-        
     </body>
 </html>
